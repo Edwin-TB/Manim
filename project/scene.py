@@ -18,3 +18,8 @@ class SquareToCircle(Scene):
         self.play(Create(square))  # animate the creation of the square
         self.play(Transform(square, circle))  # interpolate the square into the circle
         self.play(FadeOut(square))  # fade out animation
+
+class CircleAttack(scene):
+    def construct(self):
+        circle1 = Circle()
+        circle1.set_fill(red_a, opacity=0.5)
